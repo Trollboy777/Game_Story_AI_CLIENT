@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 0.75rem 1.25rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #10a37f;
+    color: white;
+    cursor: pointer;
+}
+
+#old_response {
+    padding: 1rem;
+    padding-bottom: 6rem;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message.ai {
+    justify-content: flex-start;
+}
+
+.bubble {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.message.user .bubble {
+    background-color: #dcf8c6;
+    color: #000;
+    border-bottom-right-radius: 0;
+}
+
+.message.ai .bubble {
+    background-color: #ffffff;
+    color: #000;
+    border-bottom-left-radius: 0;
+}
